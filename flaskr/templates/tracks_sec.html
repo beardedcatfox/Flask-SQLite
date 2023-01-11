@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Названия треков и продолжительность
+{% endblock %}
+
+{% block body %}
+ Названия треков и продолжительность в секундах:
+    {% for track in track_sec %}
+    {{ track.title }} {{ track.length }}
+{% endfor %}
+{% endblock %}
